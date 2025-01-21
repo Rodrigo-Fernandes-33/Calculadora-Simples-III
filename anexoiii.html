@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples Nacional - Anexo III</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Simples Nacional - Anexo III</h1>
+    </header>
+
+    <main>
+        <section id="dados-empresa">
+            <h2>Dados da Empresa</h2>
+            <label for="razaoSocial">Razão Social:</label>
+            <input type="text" id="razaoSocial" placeholder="Digite a razão social" required>
+            
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" id="cnpj" placeholder="Digite o CNPJ" required>
+            
+            <label for="cnae">CNAE:</label>
+            <input type="text" id="cnae" placeholder="Digite o CNAE" required>
+        </section>
+
+        <section id="faturamento">
+            <h2>Faturamento dos Últimos 12 Meses</h2>
+            <div id="campos-faturamento">
+                <!-- Gerar automaticamente os 12 campos com JavaScript -->
+            </div>
+        </section>
+
+        <button id="calcular">Calcular</button>
+        
+        <section id="resultado">
+            <h2>Resultado</h2>
+            <p id="faixa"></p>
+            <p id="aliquota"></p>
+            <p id="faturamentoTotal"></p>
+            <p id="imposto"></p>
+        </section>
+    </main>
+
+    <script src="anexoiii.js"></script>
+</body>
+</html>
